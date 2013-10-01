@@ -46,3 +46,6 @@ $ ->
 			jQuery(this).blur()
 			$("#go").focus().click()
 			false
+
+	$("#result").click ->
+		this.select()
