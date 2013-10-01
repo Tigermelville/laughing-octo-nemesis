@@ -1,0 +1,30 @@
+@(message: String, count: Long, domain: String)
+
+@main("Get Shorty!") {
+  <h5><span id="kt">@count</span> Served!</h5>
+  <div class="span16" id="content">
+	  <form id="form" action="#" method="post" style="text-align: center;">
+         <fieldset>
+	       <div><input type="text" id="url" placeholder="Enter URL" maxlength="4095"></div>
+	       <div><button type="button" id="go" class="btn btn-primary">Get Shorty!</button></div>
+         </fieldset>
+       </form>
+	  <form id="rform" action="/" method="get" target="_new" style="text-align: center;">
+         <fieldset>
+	       <div id="resdiv">
+	         <div><input type="text" id="result" readonly></div>
+	         <div><button type="button" id="redir" class="btn btn-primary">Redirect</button></div>
+	       </div>
+         </fieldset>
+       </form>
+  </div>
+  <div id="warn" class="modal hide fade" tabindex="-1" role="dialog" area-labelledby="myModalLabel" aria-hidden="true" style="display:none;">
+    <div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button><h3/></div>
+    <div class="modal-body">
+      Sorry, shortening of @domain urls is not allowed as an infinite redirect loop would result
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn" data-dismiss="modal">Dismiss</button>
+    </div>
+  </div>
+}

@@ -1,0 +1,5 @@
+GET     /count                      controllers.Application.countShorty
+GET     /                           controllers.Application.index
+POST    /                           controllers.Application.getShorty
+GET     /:code                      controllers.Application.redirectShorty(code)
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
