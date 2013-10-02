@@ -40,8 +40,8 @@ class ShortyTest extends FlatSpec with ShouldMatchers {
       }
 
   "config test 1" should
-    "find 64 digits" in fakeApp {
-    assert(Shorty.digits.length == 64)
+    "find 63 digits" in fakeApp {
+    assert(Shorty.digits.length == 63)
   }
 
   "config test 2" should

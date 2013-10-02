@@ -24,4 +24,3 @@ In addition, a GET to the root will present a modest GUI for the service
 GET     /          # presents the GUI
 
 Richard Melville
-tiger@disc.org
